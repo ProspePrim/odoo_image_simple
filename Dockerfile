@@ -53,7 +53,7 @@ RUN echo 'deb http://apt.postgresql.org/pub/repos/apt/ buster-pgdg main' > /etc/
 RUN npm install -g rtlcss
 
 # Install python modules
-RUN pip3 install pdfkit yattag email_validator httpagentparser
+RUN pip3 install pdfkit yattag email_validator httpagentparser redis
 
 # Install Odoo
 ENV ODOO_VERSION 13.0
